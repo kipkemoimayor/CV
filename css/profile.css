@@ -48,3 +48,16 @@
   border: 1px solid white;
   border-radius: 20px;
 }
+.one {
+  float: left;
+  width: 350px;
+  margin: 10px;
+  background-color: #654134;
+  color: white;
+}
+.one p{
+  color:white;
+}
+.skills{
+  display:inline-block;
+}
