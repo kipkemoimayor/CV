@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>Form validation</h1>
+      <p class="fadein">A bit of form validation, Oh! wondering which language is used here, Its <a btn class="btn-info" href="#">JavaScript</a> with the help of JQuery</p>
+      <!-- <p>Click here to  <a href="profile.html">view</a>  my CV </p> -->
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+    <form id="register" class="" action="index.html" method="post">
+      <div class="form-group">
+        <label for="">Username</label>
+        <input  class="form-control" required id="user"  type="text" name="" value="">
+      </div>
+      <div class="form-group">
+        <label for="">Password</label>
+        <input class="form-control" required id="pass" type="password" name="" value="">
+      </div>
+      <div class="">
+          <span class="bg-danger" id="message"></span>
+      </div>
+      <button id="submit" disabled title="one" class="btn btn-success" type="submit" name="button" >Submit</button>
+    </form>
+
+
+        <form id="login"  class="form-group" action="index.html" method="post">
+          <div class="form-group">
+            <label for="">Username</label>
+            <input id="conOne"  class="form-control" type="text" name="" value="">
+          </div>
+          <div class="form-group">
+            <label for="">password</label>
+            <input id="conTwo"  class="form-control" type="password" name="" value="">
+          </div>
+          <div class="">
+            <i class="bg-danger" id="wrong"></i>
+          </div>
+
+          <button id="log" disabled class="btn btn-primary" type="submit" name="button">Login</button>
+
+        </form>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="card">
+      <h3 id="name">User name</h3>
+
+      <h1>WELCOME</h1>
+      <p><i>This is your account<hr> </i><p>
+        <p>If you <strong>logout</strong> you destroy your account</p>
+        <span>Login Time</span><p id="date"></p>
+      <a href="index.html" class="btn btn-danger">Logout and destroy your account</a>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

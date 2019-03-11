@@ -1,0 +1,17 @@
+#login{
+  display:none;
+}
+.card{
+  width: 50%;
+  display: none;
+  position: relative;
+}
+hr{
+  border-style: solid;
+  border-color: blue;
+  border-width: medium;
+}
+/* #date{
+  display: flex;
+  float: right;
+} */
