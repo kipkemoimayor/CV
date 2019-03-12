@@ -26,13 +26,25 @@ var storeUserPassword=[];
 
 //check password strength
 function passwordStrength(passWord){
-  if(passWord.length>6){
+  if(passWord.length<6){
+    $("#message").text("Too short, password length should be more than 6")
+
+  }
+  else if (passWord.search(/[A-Z]/)<0) {
+    $("#message").text("Password should contain atleast one uppercase")
+  }
+  else if (passWord.search(/[0-9]/)<0) {
+    $("#message").text("Password should contain atleast a Number")
+  }
+  else if (passWord.search(/[~`@!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/)<0) {
+      $("#message").text("Password should contain atleast on special charater")
+  }
+  else{
     $("#pass").val("");
     $("#login").fadeIn(1000);
     $("#login").show();
     $("#register").fadeOut(2000);
     $("#register").hide();
-  }else{
     $("#message").text("Too short, password length should be more than 6")
   }
 
