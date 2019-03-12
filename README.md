@@ -1,3 +1,2 @@
-# CV
-This is a cv about me
-you only need a web browser to view me
+# Form validation
+This is to validate input fields have the right passwords and usernames
